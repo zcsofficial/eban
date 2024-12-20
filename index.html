@@ -63,7 +63,7 @@
             const keyword = document.getElementById('keyword').value;
             const alertBox = document.getElementById('alert');
             const tableBody = document.getElementById('results-table-body');
-            const url = `http://127.0.0.1:8000/search?keyword=${encodeURIComponent(keyword)}`;
+            const url = `https://api-backend-g3lm.onrender.com/search?keyword=${encodeURIComponent(keyword)}`;
 
             // Clear previous results and alert
             alertBox.style.display = 'none';
@@ -110,7 +110,7 @@
 
         function refreshData() {
             const alertBox = document.getElementById('alert');
-            const url = 'http://127.0.0.1:8000/refresh';
+            const url = 'https://api-backend-g3lm.onrender.com/refresh';
 
             alertBox.style.display = 'none';
 
